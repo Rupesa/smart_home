@@ -1,0 +1,35 @@
+﻿<Window x:Class="IHCProject.AddScene2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:IHCProject"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      xmlns:sys1="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+      mc:Ignorable="d" 
+      Title="AddScene2" Height="667" Width="375" ResizeMode="NoResize" Background="#FFF2F2F7" WindowStartupLocation="CenterScreen" WindowStyle="None">
+
+    <Grid>
+
+        <Image HorizontalAlignment="Left" Height="587" Margin="0,30,0,0" VerticalAlignment="Top" Width="375" Source="Resources/addScene2.png"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" Source="./Resources/topBar.png"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="1,617,0,0" VerticalAlignment="Top" Width="374" Source="./Resources/homeNavBar.png" Stretch="Fill"/>
+        <Image Name="sw1" Visibility="Hidden" HorizontalAlignment="Left" Height="45" Margin="264,187,0,0" VerticalAlignment="Top" Width="65" Source="Resources/on.png"/>
+        <Image Name="sw2" Visibility="Hidden" HorizontalAlignment="Left" Height="45" Margin="264,232,0,0" VerticalAlignment="Top" Width="65" Source="Resources/on.png"/>
+        <Image Name="sw3" Visibility="Hidden" HorizontalAlignment="Left" Height="45" Margin="264,389,0,0" VerticalAlignment="Top" Width="65" Source="Resources/on.png"/>
+        <Image Name="sw4" Visibility="Hidden" HorizontalAlignment="Left" Height="45" Margin="264,434,0,0" VerticalAlignment="Top" Width="65" Source="Resources/on.png"/>
+        <Image HorizontalAlignment="Left" Height="54" Margin="158,530,0,0" VerticalAlignment="Top" Width="58" Source="Resources/ok.png"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="250,617,0,0" VerticalAlignment="Top" Width="125" Opacity="0" Click="goToStats"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="125,617,0,0" VerticalAlignment="Top" Width="125" Opacity="0" Click="goToRooms"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="0,617,0,0" VerticalAlignment="Top" Width="125" Opacity="0" Click="goHome"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="47,54,0,0" VerticalAlignment="Top" Width="27" Height="38" Opacity="0" Click="goBack"/>
+        <Button Content="Button" Click="goNext" HorizontalAlignment="Left" Margin="162,530,0,0" VerticalAlignment="Top" Width="50" Height="46" Opacity="0"/>
+        <Button Name="b1" Click="act1" Content="Button" HorizontalAlignment="Left" Margin="264,187,0,0" VerticalAlignment="Top" Width="65" Height="45" Opacity="0"/>
+        <Button Name="b2" Click="act2" Content="Button" HorizontalAlignment="Left" Margin="264,232,0,0" VerticalAlignment="Top" Width="65" Height="45" Opacity="0"/>
+        <Button Name="b3" Click="act3" Content="Button" HorizontalAlignment="Left" Margin="264,389,0,0" VerticalAlignment="Top" Width="65" Height="45" Opacity="0"/>
+        <Button Name="b4" Click="act4" Content="Button" HorizontalAlignment="Left" Margin="264,434,0,0" VerticalAlignment="Top" Width="65" Height="45" Opacity="0"/>
+
+
+
+    </Grid>
+</Window>

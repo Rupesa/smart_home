@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IHCProject</RootNamespace>
+    <AssemblyName>IHCProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.Licensing, Version=18.1460.0.52, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.18.1.0.52\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.WPF, Version=18.1460.0.52, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.SfChart.WPF.18.1.0.52\lib\net46\Syncfusion.SfChart.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddFavourite1.xaml.cs">
+      <DependentUpon>AddFavourite1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddFavourite2.xaml.cs">
+      <DependentUpon>AddFavourite2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddScene1.xaml.cs">
+      <DependentUpon>AddScene1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddScene2.xaml.cs">
+      <DependentUpon>AddScene2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddScene3.xaml.cs">
+      <DependentUpon>AddScene3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddScene4.xaml.cs">
+      <DependentUpon>AddScene4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Co2Stats.xaml.cs">
+      <DependentUpon>Co2Stats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EEStats.xaml.cs">
+      <DependentUpon>EEStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HumidityStats.xaml.cs">
+      <DependentUpon>HumidityStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MonthCO2.xaml.cs">
+      <DependentUpon>MonthCO2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MonthEE.xaml.cs">
+      <DependentUpon>MonthEE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MonthHum.xaml.cs">
+      <DependentUpon>MonthHum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MonthTemp.xaml.cs">
+      <DependentUpon>MonthTemp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications.xaml.cs">
+      <DependentUpon>Notifications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.xaml.cs">
+      <DependentUpon>Rooms.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms_add.xaml.cs">
+      <DependentUpon>Rooms_add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms_living.xaml.cs">
+      <DependentUpon>Rooms_living.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TempStats.xaml.cs">
+      <DependentUpon>TempStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TempValues.cs" />
+    <Compile Include="ViewModel.cs" />
+    <Page Include="AddFavourite1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddFavourite2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddScene1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddScene2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddScene3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AddScene4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Co2Stats.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EEStats.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HumidityStats.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InitialPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InitialPage.xaml.cs">
+      <DependentUpon>InitialPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MonthCO2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MonthEE.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MonthHum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MonthTemp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Notifications.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rooms.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rooms_add.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Rooms_living.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TempStats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\testBotao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\btnSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\humidity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Co2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\termometro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\eletricEnergy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\topBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\navBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\backArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\1 - Rooms.png" />
+    <Resource Include="Resources\2 - Living Room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add.png" />
+    <Resource Include="Resources\bulb.png" />
+    <Resource Include="Resources\homeNavBar.png" />
+    <Resource Include="Resources\moon.png" />
+    <Resource Include="Resources\popcorn.png" />
+    <Resource Include="Resources\sun.png" />
+    <Resource Include="Resources\usersButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\addFavourite1.png" />
+    <Resource Include="Resources\addFavourite2.png" />
+    <Resource Include="Resources\addScene1.png" />
+    <Resource Include="Resources\addScene2.png" />
+    <Resource Include="Resources\addScene3.png" />
+    <Resource Include="Resources\blind.png" />
+    <Resource Include="Resources\film.png" />
+    <Resource Include="Resources\garage.png" />
+    <Resource Include="Resources\notifications.png" />
+    <Resource Include="Resources\ok.png" />
+    <Resource Include="Resources\ok2.png" />
+    <Resource Include="Resources\on.png" />
+    <Resource Include="Resources\speaker.png" />
+    <Resource Include="Resources\users.png" />
+    <Resource Include="Resources\volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Rooms_add.png" />
+    <Resource Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\info.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

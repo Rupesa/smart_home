@@ -1,0 +1,82 @@
+﻿<Window x:Class="IHCProject.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IHCProject"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:sys1="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        mc:Ignorable="d"
+        Title="Statistics" Height="667" Width="375" ResizeMode="NoResize" Background="#FFF2F2F7" WindowStartupLocation="CenterScreen" WindowStyle="None">
+
+
+    <Grid>
+        <Label x:Name="TitleLabel" Content="Statistics" HorizontalAlignment="Left" Height="43" Margin="46,62,0,0" VerticalAlignment="Top" Width="127" FontFamily="Trebuchet MS" FontSize="28" Foreground="{StaticResource titleColor}">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Rectangle Fill="{StaticResource titleColor}" HorizontalAlignment="Left" Height="2" Margin="42,122,0,0" Stroke="{StaticResource titleColor}" VerticalAlignment="Top" Width="291"/>
+        <Label HorizontalAlignment="Left" Height="33" Margin="95,203,0,0" VerticalAlignment="Top" Width="125" FontFamily="Trebuchet MS" FontSize="20" Content="Temperature">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="37" Margin="95,320,0,0" VerticalAlignment="Top" Width="125" FontFamily="Trebuchet MS" FontSize="20" Content="Humidity">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="35" Margin="95,436,0,0" VerticalAlignment="Top" Width="116" FontFamily="Trebuchet MS" FontSize="20" Content="C02 Levels">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="35" Margin="95,542,0,0" VerticalAlignment="Top" Width="143" FontFamily="Trebuchet MS" FontSize="20" Content="Eletric Energy">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Rectangle Fill="{StaticResource titleColor}" HorizontalAlignment="Left" Height="2" Margin="95,268,0,0" Stroke="{StaticResource titleColor}" VerticalAlignment="Top" Width="191"/>
+        <Rectangle Fill="{StaticResource titleColor}" HorizontalAlignment="Left" Height="2" Margin="95,386,0,0" Stroke="{StaticResource titleColor}" VerticalAlignment="Top" Width="191"/>
+        <Rectangle Fill="{StaticResource titleColor}" HorizontalAlignment="Left" Height="2" Margin="95,504,0,0" Stroke="{StaticResource titleColor}" VerticalAlignment="Top" Width="191"/>
+        <Label HorizontalAlignment="Left" Height="33" Margin="263,203,0,0" VerticalAlignment="Top" Width="70" FontFamily="Trebuchet MS" FontSize="20" Content="20 ºC">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="33" Margin="267,320,0,0" VerticalAlignment="Top" Width="70" FontFamily="Trebuchet MS" FontSize="20" Content="32 %">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="33" Margin="232,436,0,0" VerticalAlignment="Top" Width="127" FontFamily="Trebuchet MS" FontSize="20" Content="942 mg.m-3">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Label HorizontalAlignment="Left" Height="33" Margin="263,542,0,0" VerticalAlignment="Top" Width="87" FontFamily="Trebuchet MS" FontSize="20" Content="2.4 kWh">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="2" Opacity="0.25" ShadowDepth="2"/>
+            </Label.Effect>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="46" Margin="251,59,0,0" VerticalAlignment="Top" Width="47" Source="./Resources/testBotao.png"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="298,59,0,0" VerticalAlignment="Top" Width="52" Source="./Resources/btnSettings.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,318,0,0" VerticalAlignment="Top" Width="40" Source="./Resources/humidity.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,434,0,0" VerticalAlignment="Top" Width="40" Source="./Resources/Co2.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,318,0,0" VerticalAlignment="Top" Width="40" Source="./Resources/humidity.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,200,0,0" VerticalAlignment="Top" Width="40" Source="./Resources/termometro.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="30,539,0,0" VerticalAlignment="Top" Width="40" Source="./Resources/eletricEnergy.png"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="0,0,0,0" VerticalAlignment="Top" Width="375" Source="./Resources/topBar.png"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="1,618,0,-1" VerticalAlignment="Top" Width="374" Source="./Resources/navBar.png" Stretch="Fill"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="250,618,0,0" VerticalAlignment="Top" Width="125" Opacity="0"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="125,618,0,-1" VerticalAlignment="Top" Width="125" Opacity="0" Click="Button_Click_4"/>
+        <Button HorizontalAlignment="Left" Height="50" Margin="0,618,0,-1" VerticalAlignment="Top" Width="125" Opacity="0" Click="Button_Click_5"/>
+        <Button HorizontalAlignment="Left" Height="70" Margin="0,522,0,0" VerticalAlignment="Top" Width="375" Opacity="0" Click="Button_Click_2"/>
+        <Button HorizontalAlignment="Left" Height="70" Margin="0,418,0,0" VerticalAlignment="Top" Width="375" Opacity="0" Click="Button_Click_3"/>
+        <Button HorizontalAlignment="Left" Height="70" Margin="0,302,0,0" VerticalAlignment="Top" Width="375" Opacity="0" Click="Button_Click_1"/>
+        <Button HorizontalAlignment="Left" Height="70" Margin="0,185,0,0" VerticalAlignment="Top" Width="375" Opacity="0" Click="Button_Click"/>
+        <Button HorizontalAlignment="Left" Height="46" Margin="250,59,0,0" VerticalAlignment="Top" Width="43" Opacity="0" Click="Button_Click_6"/>
+        <Button HorizontalAlignment="Left" Height="46" Margin="303,59,0,0" VerticalAlignment="Top" Width="43" Opacity="0" Click="Button_Click_7"/>
+    </Grid>
+</Window>

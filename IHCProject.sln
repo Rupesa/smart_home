@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHCProject", "IHCProject.csproj", "{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{9064CF78-7EB9-4D4B-80FA-9E11008241C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Desktop\3ºano\IHC\projeto\testBotao.png = ..\..\..\..\Desktop\3ºano\IHC\projeto\testBotao.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE31FE0C-F3FA-4F37-8F65-22959347DF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BA112DA-9903-423C-9F2F-792C6DCE302F}
+	EndGlobalSection
+EndGlobal
